@@ -1,13 +1,13 @@
-import React, { ReactNode } from 'react'
-import Link from 'next/link'
-import Head from 'next/head'
+import React, { ReactNode } from 'react';
+import Link from 'next/link';
+import Head from 'next/head';
 
 type Props = {
-  children?: ReactNode
-  title?: string
-}
+  children?: ReactNode;
+  title?: string;
+};
 
-const Layout = ({ children, title = 'William\'s Knowledge Base' }: Props) => (
+const Layout = ({ children, title = "William's Knowledge Base" }: Props) => (
   <div>
     <Head>
       <title>{title}</title>
@@ -31,6 +31,6 @@ const Layout = ({ children, title = 'William\'s Knowledge Base' }: Props) => (
       <span>Copyright 2020 The WKB Authors</span>
     </footer>
   </div>
-)
+);
 
-export default Layout
+export default Layout;
