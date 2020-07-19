@@ -6,12 +6,14 @@
     "build": "next build",
     "export": "next export",
     "type-check": "tsc",
-    "prettier": "prettier --write components pages *.ts tsconfig.json"
+    "prettier": "prettier --write components pages posts utils *.ts tsconfig.json"
   },
   "dependencies": {
+    "gray-matter": "^4.0.2",
     "next": "9.4.4",
     "react": "16.13.1",
-    "react-dom": "16.13.1"
+    "react-dom": "16.13.1",
+    "react-markdown": "^4.3.1"
   },
   "devDependencies": {
     "@types/node": "^14.0.23",
