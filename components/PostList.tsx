@@ -7,7 +7,7 @@ type PostListProps = {
   posts: Post[];
 };
 
-export default function PostList(props: PostListProps): React.ReactElement {
+const PostList: React.FC<PostListProps> = (props) => {
   return (
     <ul>
       {props.posts.map((post) => (
@@ -19,4 +19,6 @@ export default function PostList(props: PostListProps): React.ReactElement {
       ))}
     </ul>
   );
-}
+};
+
+export default PostList;

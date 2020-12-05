@@ -5,11 +5,11 @@
   "license": "MIT",
   "scripts": {
     "postinstall": "next telemetry disable",
-    "dev": "next",
+    "dev": "next dev",
     "build": "next build",
     "export": "next export",
     "type-check": "tsc",
-    "prettier": "prettier --write components pages posts utils *.ts tsconfig.json"
+    "prettier": "prettier --write components pages posts utils styles *.ts tsconfig.json"
   },
   "dependencies": {
     "gray-matter": "4.0.2",
