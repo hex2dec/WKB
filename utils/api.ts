@@ -6,7 +6,7 @@ import matter from 'gray-matter';
 export type Post = {
   key: string;
   title: string;
-  author: string;
+  date?: string;
   content: string;
 };
 
@@ -16,13 +16,18 @@ export function getPostBySlug(slug: string): Post {
   const _slugWithSuffix = slug.replace(/\.md$/, '') + '.md';
   const postPath = join(postDir, _slugWithSuffix);
   const content = fs.readFileSync(postPath, 'utf-8');
-  const data = matter(content);
-  return {
+  const payload = matter(content);
+  const post: Post = {
     key: slug.replace(/\.md$/, ''),
-    title: data.data.title,
-    author: data.data.author,
-    content: data.content,
+    title: payload.data.title,
+    content: payload.content,
   };
+
+  if (payload.data.date && typeof payload.data.date === 'object') {
+    post.date = payload.data.date.toDateString();
+  }
+
+  return post;
 }
 
 export function getPosts(): Post[] {

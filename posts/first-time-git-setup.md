@@ -1,12 +1,7 @@
 ---
-title: Git 初始化配置
-author: William Huang
+title: Setup Your Git
 date: 2020-07-18
 ---
-
-# Git 初始化配置
-
-## 个人基本信息
 
 ```text
 git config --global user.name "Your Name"
