@@ -4,6 +4,7 @@
   "private": true,
   "license": "MIT",
   "scripts": {
+    "postinstall": "next telemetry disable",
     "dev": "next",
     "build": "next build",
     "export": "next export",
