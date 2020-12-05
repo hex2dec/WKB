@@ -3,11 +3,10 @@
 ## Development
 
 ```shell
-npm install
-npm run dev
+yarn install
+yarn dev
 ```
 
 ## Copyright
 
 The WKB Authors
-

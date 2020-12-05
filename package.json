@@ -1,6 +1,8 @@
 {
   "name": "wkb",
   "version": "0.1.0",
+  "private": true,
+  "license": "MIT",
   "scripts": {
     "dev": "next",
     "build": "next build",
@@ -9,17 +11,17 @@
     "prettier": "prettier --write components pages posts utils *.ts tsconfig.json"
   },
   "dependencies": {
-    "gray-matter": "^4.0.2",
-    "next": "9.4.4",
-    "react": "16.13.1",
-    "react-dom": "16.13.1",
-    "react-markdown": "^4.3.1"
+    "gray-matter": "4.0.2",
+    "next": "10.0.3",
+    "react": "17.0.1",
+    "react-dom": "17.0.1",
+    "react-markdown": "5.0.3"
   },
   "devDependencies": {
-    "@types/node": "^14.0.23",
-    "@types/react": "^16.9.43",
-    "@types/react-dom": "^16.9.8",
-    "prettier": "^2.0.5",
-    "typescript": "3.9.7"
+    "@types/node": "14.14.10",
+    "@types/react": "17.0.0",
+    "@types/react-dom": "17.0.0",
+    "prettier": "2.2.1",
+    "typescript": "4.1.2"
   }
 }
